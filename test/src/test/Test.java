@@ -29,4 +29,33 @@ public class Test {
 		
 		return map;
 	}
+
+//	static Human maxAge(ArrayList<Human> hList) {
+//		
+//		int maxvalue = -1;
+//		Human maxHuman = null;
+//		
+//	 	for(int i=0; i<hList.size(); i++) {
+//	 		if(maxvalue < hList.get(i).getAge()) {
+//	 			maxvalue = hList.get(i).getAge();
+//	 			maxHuman = hList.get(i);
+//	 		}
+//	 	}
+//		 		 
+//		return maxHuman;
+//	}
+	
+	static Human maxAge(ArrayList<Human> list) {
+		
+		int index = 0;
+		
+	 	for(int i=1; i<list.size(); i++) {
+	 		if(list.get(index).getAge() < list.get(i).getAge()) {
+	 			index = i;
+	 			
+	 		}
+	 	}
+		 		 
+		return list.get(index);
+	}
 }
