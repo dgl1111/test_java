@@ -14,8 +14,7 @@ public class Collection3 {
 		Human kim = new Human("김철수", 20, "인천");
 		Human park = new Human("박영희", 25, "제주도");
 		
-		ArrayList<Human> hList =
-				new ArrayList<>();
+		ArrayList<Human> hList = new ArrayList<>();
 		hList.add(hong);	
 		hList.add(kim);	
 		hList.add(park);	
@@ -45,8 +44,7 @@ public class Collection3 {
 		// ArrayList<Integer> list = [1 ,3, 5 ,7]
 		// int a = list.get(2);
 		
-		HashMap<String, Integer> map 
-			= new HashMap<String, Integer>();
+		HashMap<String, Integer> map = new HashMap<String, Integer>();
 		
 		map.put("num1", 100);
 		map.put("num2", 3000);
